@@ -1,3 +1,8 @@
-FROM golang:1.19.0
+FROM golang:1.23.0
 
-WORKDIR /usr/src/dir
+WORKDIR /usr/src/app
+
+RUN go install github.com/air-verse/air@latest
+
+COPY . .
+RUN go mod tidy

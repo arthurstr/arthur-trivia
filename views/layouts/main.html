@@ -1,12 +1,13 @@
-{{define "main"}}
+
 <!DOCTYPE html>
 <head>
     <title>Arthur Trivia</title>
+    <link rel="stylesheet" href="style/main.css?v=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
     <div class="wrapper">
-        {{template "header" .}} 
-
+        {{template "header" .}}
         <h1>{{.Title}}</h1>
         <h2>
             {{.Subtitle}}

@@ -4,7 +4,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/arthurstr/arthur-trivia/database"
 	"github.com/gofiber/template/html/v2"
-	"github.com/arthurstr/arthur-trivia/handlers"
 )
 
 func main() {
@@ -18,6 +17,8 @@ func main() {
     })
 
     setupRoutes(app)
+
+	app.Static("/","./public")
 
     app.Listen(":3000")
 }

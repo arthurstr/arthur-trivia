@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
     <title>Arthur Trivia</title>
-    <link rel="stylesheet" href="style/main.css?v=1">
+    <link id="styles" rel="stylesheet" href="/style/main.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -16,3 +16,13 @@
     </div>
 </body>
 </html>
+
+<script src="/javascript/app.js"></script>
+
+<script>
+    const timeStamp = Date.now()
+    const stylesheetLink = document.querySelector("link#styles")
+    const appScriptLink = document.querySelector("script#main")
+    stylesheetLink.href += `?t=${timeStamp}`
+    appScriptLink.src += `?t=${timeStamp}`
+</script>

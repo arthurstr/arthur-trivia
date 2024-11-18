@@ -59,7 +59,7 @@ form label span {
 
 form input {
     width: 100%;
-    padding: 5px 16px;
+    padding: 5px 1px;
     border-radius: 3px;
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -174,9 +174,6 @@ form input[type="submit"] {
     text-decoration: none;
 }
 
-.site-logo img {
-    width: 80px;
-}
 
 .fact-item {
     display: flex;
@@ -208,6 +205,7 @@ form input[type="submit"] {
     border-radius: 10px;
     cursor: pointer;
 }
+
 
 .fact-item .question {
     margin-bottom:10px;
